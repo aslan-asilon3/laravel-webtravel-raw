@@ -17,7 +17,7 @@ use App\http\controllers\LandingPageController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.landingpage');
 });
 
 
