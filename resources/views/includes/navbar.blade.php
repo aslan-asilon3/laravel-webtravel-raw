@@ -1,7 +1,7 @@
 <div class="container">
     <nav class="row navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand" href="#">
-        <img src="frontend/images/logo.png" alt="" />/遊牧民
+        <img src="frontend/images/logo.png" alt="" />
       </a>
       <button
         class="navbar-toggler navbar-toggler-right"
@@ -16,10 +16,10 @@
       <div class="collapse navbar-collapse" id="navb">
         <ul class="navbar-nav ml-auto mr-2">
           <li class="nav-item mx-md-2">
-            <a class="nav-link active" href="/">Home/家</a>
+            <a class="nav-link active" href="/">Home</a>
           </li>
           <li class="nav-item mx-md-2">
-            <a class="nav-link" href="#">Travel Package/旅行パッケージ</a>
+            <a class="nav-link" href="#">Travel Package</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -28,7 +28,7 @@
               id="navbardrop"
               data-toggle="dropdown"
             >
-              Services/サービス
+              Services
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Link 1</a>
@@ -37,14 +37,14 @@
             </div>
           </li>
           <li class="nav-item mx-md-2">
-            <a class="nav-link" href="#">Testimonial/お客様の声</a>
+            <a class="nav-link" href="#">Testimonial</a>
           </li>
         </ul>
 
         <!-- Mobile button -->
         <form class="form-inline d-sm-block d-md-none" href="/login">
           <button class="btn btn-login my-2 my-sm-0">
-            Login/ログインする
+            Login
           </button>
         </form>
         <!-- Desktop Button -->

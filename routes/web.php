@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-// use App\http\controllers\LoginController;~
+use App\http\controllers\LoginController;
 
 use App\http\controllers\admin\DashboardController;
 use App\http\controllers\LandingPageController;
@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/login', [LandingPageController::class,'index'])->name('login');
+Route::get('/login', [LoginController::class,'index'])->name('login');
 // Route::get('/', [LoginController::class,'authenticated'])->name('login');
 
 // Landing page

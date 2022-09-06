@@ -6,11 +6,6 @@
 
 
 <header class="text-center">
-    <h1>
-        美しい世界を探検
-      <br />
-      ワンクリックで簡単に
-    </h1>
     <h2 class="text-white">
       Explore The Beautiful World
       <br />
@@ -21,13 +16,8 @@
       <br />
       moment you never see before
     </p>
-    <p class="mt-0">
-      あなたは美しく見えるでしょう
-      <br />
-      今まで見たことのない瞬間
-    </p>
     <a href="#" class="btn btn-get-started px-4 mt-4">
-      Get Started/始める
+      Get Started
     </a>
   </header>
   <main>
