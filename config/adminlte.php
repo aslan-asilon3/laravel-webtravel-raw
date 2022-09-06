@@ -332,7 +332,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Data Sales',
-                    'url'  => '#',
+                    'url'  => 'admin/sales',
                 ],
                 [
                     'text' => 'Data Akumulasi Poin',
