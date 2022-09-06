@@ -33,44 +33,44 @@
                     <img
                       class="xzoom" style="width: 30%;"
                       id="xzoom-default"
-                      src="{{asset('frontend/images/popular-1.jpg')}}"
-                      xoriginal="{{asset('frontend/images/popular-1.jpg')}}"
+                      src="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
+                      xoriginal="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                     />
                     <div class="xzoom-thumbs">
-                      <a href="{{asset('frontend/images/popular-1.jpg')}}"
+                      <a href="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                         ><img
                           class="xzoom-gallery"
                           width="128"
-                          src="{{asset('frontend/images/popular-1.jpg')}}"
-                          xpreview="{{asset('frontend/images/popular-1.jpg')}}"
+                          src="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
+                          xpreview="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                       /></a>
-                      <a href="{{asset('frontend/images/popular-1.jpg')}}"
+                      <a href="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                         ><img
                           class="xzoom-gallery"
                           width="128"
-                          src="{{asset('frontend/images/popular-1.jpg')}}"
-                          xpreview="{{asset('frontend/images/popular-1.jpg')}}"
+                          src="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
+                          xpreview="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                       /></a>
-                      <a href="{{asset('frontend/images/popular-1.jpg')}}"
+                      <a href="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                         ><img
                           class="xzoom-gallery"
                           width="128"
-                          src="{{asset('frontend/images/popular-1.jpg')}}"
-                          xpreview="{{asset('frontend/images/popular-1.jpg')}}"
+                          src="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
+                          xpreview="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                       /></a>
-                      <a href="{{asset('frontend/images/popular-1.jpg')}}"
+                      <a href="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                         ><img
                           class="xzoom-gallery"
                           width="128"
-                          src="{{asset('frontend/images/popular-1.jpg')}}"
-                          xpreview="{{asset('frontend/images/popular-1.jpg')}}"
+                          src="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
+                          xpreview="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                       /></a>
-                      <a href="{{asset('frontend/images/popular-1.jpg')}}"
+                      <a href="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                         ><img
                           class="xzoom-gallery"
                           width="128"
-                          src="{{asset('frontend/images/popular-1.jpg')}}"
-                          xpreview="{{asset('frontend/images/popular-1.jpg')}}"
+                          src="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
+                          xpreview="{{asset('asset-landingpage/frontend/images/popular-1.jpg')}}"
                       /></a>
                     </div>
                   </div>
@@ -89,7 +89,7 @@
                   <div class="features row pt-3">
                     <div class="col-md-4">
                       <img
-                        src="{{asset('frontend/images/ic_event.png')}}"
+                        src="{{asset('asset-landingpage/frontend/images/ic_event.png')}}"
                         alt=""
                         class="features-image"
                       />
@@ -100,7 +100,7 @@
                     </div>
                     <div class="col-md-4 border-left">
                       <img
-                        src="{{asset('frontend/images/ic_language.png')}}"
+                        src="{{asset('asset-landingpage/frontend/images/ic_language.png')}}"
                         alt=""
                         class="features-image"
                       />
@@ -111,7 +111,7 @@
                     </div>
                     <div class="col-md-4 border-left">
                       <img
-                        src="{{asset('frontend/images/ic_foods.png')}}"
+                        src="{{asset('asset-landingpage/frontend/images/ic_foods.png')}}"
                         alt=""
                         class="features-image"
                       />
@@ -128,11 +128,11 @@
               <div class="card card-details card-right">
                 <h2>Members are going</h2>
                 <div class="members my-2">
-                  <img src="{{asset('frontend/images/member-1.png')}}" alt="" class="w-5" />
-                  <img src="{{asset('frontend/images/member-2.png')}}" alt="" class="w-5" />
-                  <img src="{{asset('frontend/images/member-3.png')}}" alt="" class="w-5" />
-                  <img src="{{asset('frontend/images/member-4.png')}}" alt="" class="w-5" />
-                  <img src="{{asset('frontend/images/member-5.png')}}" alt="" class="w-5" />
+                  <img src="{{asset('asset-landingpage/frontend/images/member-1.png')}}" alt="" class="w-5" />
+                  <img src="{{asset('asset-landingpage/frontend/images/member-2.png')}}" alt="" class="w-5" />
+                  <img src="{{asset('asset-landingpage/frontend/images/member-3.png')}}" alt="" class="w-5" />
+                  <img src="{{asset('asset-landingpage/frontend/images/member-4.png')}}" alt="" class="w-5" />
+                  <img src="{{asset('asset-landingpage/frontend/images/member-5.png')}}" alt="" class="w-5" />
                 </div>
                 <hr />
                 <h2>Trip Informations</h2>

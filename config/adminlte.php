@@ -379,7 +379,7 @@ return [
         [
             'text'        => 'Logout',
             'url'         => '/',
-            'icon'        => 'far fa-fw fa-sign-out',
+            'icon'        => 'far fa-fw fa-file',
         ],
     ],
 

@@ -1,4 +1,4 @@
-@extends('layouts.checkout')
+@extends('layouts.app-landingpage')
 @section('title', 'Checkout')
 
 @section('content')
@@ -46,7 +46,7 @@
                     <tr>
                       <td>
                         <img
-                          src="{{url('frontend/images/avatar-1.png')}}"
+                          src="{{url('asset-landingpage/frontend/images/avatar-1.png')}}"
                           alt=""
                           height="60"
                         />
@@ -57,14 +57,14 @@
                       <td class="align-middle">Active</td>
                       <td class="align-middle">
                         <a href="#">
-                          <img src="{{url('frontend/images/ic_remove.png')}}" alt="" />
+                          <img src="{{url('asset-landingpage/frontend/images/ic_remove.png')}}" alt="" />
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <img
-                          src="{{url('frontend/images/avatar-2.png')}}"
+                          src="{{url('asset-landingpage/frontend/images/avatar-2.png')}}"
                           alt=""
                           height="60"
                         />
@@ -75,7 +75,7 @@
                       <td class="align-middle">Active</td>
                       <td class="align-middle">
                         <a href="#">
-                          <img src="{{url('frontend/images/ic_remove.png')}}" alt="" />
+                          <img src="{{url('asset-landingpage/frontend/images/ic_remove.png')}}" alt="" />
                         </a>
                       </td>
                     </tr>
@@ -170,7 +170,7 @@
               <div class="bank">
                 <div class="bank-item pb-3">
                   <img
-                    src="{{url('frontend/images/ic_bank.png')}}"
+                    src="{{url('asset-landingpage/frontend/images/ic_bank.png')}}"
                     alt=""
                     class="bank-image"
                   />
@@ -186,7 +186,7 @@
                 </div>
                 <div class="bank-item">
                   <img
-                    src="{{url('frontend/images/ic_bank.png')}}"
+                    src="{{url('asset-landingpage/frontend/images/ic_bank.png')}}"
                     alt=""
                     class="bank-image"
                   />
@@ -229,7 +229,7 @@
         format: 'yyyy-mm-dd',
         uiLibrary: 'bootstrap4',
         icons: {
-          rightIcon: '<img src="{{ asset('frontend/images/ic_doe.png') }}" />'
+          rightIcon: '<img src="{{ asset('asset-landingpage/frontend/images/ic_doe.png') }}" />'
         }
       });
     });
