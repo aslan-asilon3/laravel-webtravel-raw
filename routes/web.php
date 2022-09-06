@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\http\controllers\LoginController;
 
-use App\http\controllers\admin\DashboardController;
+use App\http\controllers\DashboardController;
 use App\http\controllers\LandingPageController;
 
 // use App\Http\Controllers\HomeController;
@@ -17,12 +17,26 @@ use App\http\controllers\LandingPageController;
 
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('pages.landingpage');
 });
 
 
 Route::get('/login', [LoginController::class,'index'])->name('login');
 // Route::get('/', [LoginController::class,'authenticated'])->name('login');
+=======
+    return view('pages/landingpage');
+});
+
+
+// Route::get('/login', function () {
+//     return view('myauth.login')->name('login');
+// });
+
+
+Route::get('/login', [LoginController::class,'index'])->name('login');
+Route::get('/register', [LoginController::class,'register'])->name('register');
+>>>>>>> 34510940767a43289d4525aeb5d02eab5c254658
 
 // Landing page
 Route::group(['prefix' => 'landingpage'], function() {
@@ -39,7 +53,7 @@ Route::get('/success', [LandingPageController::class,'success'])->name('success-
     Route::group(['prefix' => 'admin'], function () {
 
         // Route::get('/', [App\Http\Controllers\AdminController::class, 'index'])->name('admin-dashboard');
-        Route::get('/', [DashboardController::class,'index'])->name('admin');
+        Route::post('/', [DashboardController::class,'index'])->name('admin');
         // Route::post('/store', [DashboardController::class,'store'])->name('admindashboard-store');
         // Route::get('/create', [DashboardController::class,'create'])->name('admindashboard-create');
         // Route::delete('/{id}', [DashboardController::class,'destroy'])->name('admindashboard-destroy');
