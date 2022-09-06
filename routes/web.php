@@ -8,7 +8,7 @@ use App\http\controllers\DashboardController;
 use App\http\controllers\LandingPageController;
 
 // use App\Http\Controllers\HomeController;
-// use App\Http\Controllers\ProductController;
+// use App\Http\Controllers\salesController;
 
 // use App\Http\Controllers\Admin\RoleController;
 // use App\Http\Controllers\Admin\UserController;
@@ -17,26 +17,13 @@ use App\http\controllers\LandingPageController;
 
 
 Route::get('/', function () {
-<<<<<<< HEAD
-    return view('pages.landingpage');
+    return view('pages.landingpage.index');
 });
-
-
-Route::get('/login', [LoginController::class,'index'])->name('login');
-// Route::get('/', [LoginController::class,'authenticated'])->name('login');
-=======
-    return view('pages/landingpage');
-});
-
-
-// Route::get('/login', function () {
-//     return view('myauth.login')->name('login');
-// });
 
 
 Route::get('/login', [LoginController::class,'index'])->name('login');
 Route::get('/register', [LoginController::class,'register'])->name('register');
->>>>>>> 34510940767a43289d4525aeb5d02eab5c254658
+// Route::get('/admin', [DashboardController::class,'index'])->name('admin');
 
 // Landing page
 Route::group(['prefix' => 'landingpage'], function() {
@@ -52,8 +39,8 @@ Route::get('/success', [LandingPageController::class,'success'])->name('success-
 
     Route::group(['prefix' => 'admin'], function () {
 
-        // Route::get('/', [App\Http\Controllers\AdminController::class, 'index'])->name('admin-dashboard');
-        Route::post('/', [DashboardController::class,'index'])->name('admin');
+        Route::get('/', [DashboardController::class, 'index'])->name('admin');
+        // Route::get('admin-index/', [DashboardController::class,'index'])->name('admin-index');
         // Route::post('/store', [DashboardController::class,'store'])->name('admindashboard-store');
         // Route::get('/create', [DashboardController::class,'create'])->name('admindashboard-create');
         // Route::delete('/{id}', [DashboardController::class,'destroy'])->name('admindashboard-destroy');
@@ -61,12 +48,12 @@ Route::get('/success', [LandingPageController::class,'success'])->name('success-
         // Route::get('request/{request}/edit', [DashboardController::class,'edit'])->name('admindashboard-edit');
         // Route::get('detail',[DashboardController::class,'detail'])->name('admindashboard-detail');
 
-        // // =====Data product
-        // Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('product');
-        // Route::post('/product-export', [App\Http\Controllers\ProductController::class, 'export'])->name('product-export');
-        // Route::get('/product', [App\Http\Controllers\ProductController::class, 'ajax'])->name('ajax-produk');
-        // Route::post('/product-import', [ProductController::class, 'import'])->name('produk-import');
-        // Route::get('/product/download-template', [ProductController::class, 'DownloadTemplate'])->name('produk-download-template');
+        // =====Data sales
+        Route::get('/sales', [App\Http\Controllers\salesController::class, 'index'])->name('sales');
+        // Route::post('/sales-export', [App\Http\Controllers\salesController::class, 'export'])->name('sales-export');
+        // Route::get('/sales', [App\Http\Controllers\salesController::class, 'ajax'])->name('ajax-produk');
+        // Route::post('/sales-import', [salesController::class, 'import'])->name('produk-import');
+        // Route::get('/sales/download-template', [SalesController::class, 'DownloadTemplate'])->name('produk-download-template');
         // =====End Data produk
     });
 
@@ -82,7 +69,7 @@ Route::get('/success', [LandingPageController::class,'success'])->name('success-
 
 // Route::group(['middleware' => ['auth']], function() {
 //     // Route::resource('roles', RoleController::class);
-//     Route::resource('products', ProductController::class);
+//     Route::resource('saless', salesController::class);
 
 
 
