@@ -309,6 +309,11 @@ return [
             'icon'        => 'far fa-fw fa-file',
         ],
         [
+            'text'        => 'Travel',
+            'url'         => 'travel',
+            'icon'        => 'far fa-fw fa-plane',
+        ],
+        [
             'text'    => 'Roles And Permissions',
             'icon'    => 'fas fa-fw fa-users',
             'submenu' => [

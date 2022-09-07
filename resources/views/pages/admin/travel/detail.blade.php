@@ -50,43 +50,7 @@
 @endif
 
 
-<table class="table table-bordered ">
-
-  <tr>
-
-     <th>ID</th>
-     <th>Title</th>
-     <th>Location</th>
-     <th>Type</th>
-     <th>Departure Date</th>
-     <th width="280px">Action</th>
-
-  </tr>
-
-    @foreach ($travels as $key => $travel)
-
-    <tr>
-
-        <td>{{ $loop->iteration }}</td>
-
-        <td>{{ $travel->title }}</td>
-        <td>{{ $travel->location }}</td>
-        <td>{{ $travel->departure_date }}</td>
-        <td>{{ $travel->type }}</td>
-
-        <td>
-
-            <a class="btn btn-info" href="{{ route('travel-show', $travel->id) }}"> <i class="fas fa-eye"></i></a>
-            <a class="btn btn-warning" href="{{ route('travel-edit', $travel->id) }}"> <i class="fas fa-edit"></i></a>
-            <a class="btn btn-danger" href="{{ route('travel-destroy', $travel->id) }}"> <i class="fas fa-trash"></i></a>
-
-        </td>
-
-    </tr>
-
-    @endforeach
-
-</table>
+<h1>Detail</h1>
 
 
 {{-- {!! $roles->render() !!} --}}

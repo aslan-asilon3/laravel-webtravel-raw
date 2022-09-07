@@ -12,7 +12,7 @@ use App\http\controllers\LandingPageController;
 
 // use App\Http\Controllers\Admin\RoleController;
 // use App\Http\Controllers\Admin\UserController;
-// use App\Http\Controllers\Admin\TravelController;
+use App\Http\Controllers\TravelController;
 
 
 
@@ -49,12 +49,28 @@ Route::get('/success', [LandingPageController::class,'success'])->name('success-
         // Route::get('detail',[DashboardController::class,'detail'])->name('admindashboard-detail');
 
         // =====Data sales
-        Route::get('/sales', [App\Http\Controllers\salesController::class, 'index'])->name('sales');
+        Route::get('/sales', [App\Http\Controllers\SalesController::class, 'index'])->name('sales');
         // Route::post('/sales-export', [App\Http\Controllers\salesController::class, 'export'])->name('sales-export');
         // Route::get('/sales', [App\Http\Controllers\salesController::class, 'ajax'])->name('ajax-produk');
         // Route::post('/sales-import', [salesController::class, 'import'])->name('produk-import');
         // Route::get('/sales/download-template', [SalesController::class, 'DownloadTemplate'])->name('produk-download-template');
-        // =====End Data produk
+        // =====End Data Sales
+    });
+
+    Route::group(['prefix' => 'travel'], function () {
+            // =====Data Travel
+            Route::get('/', [TravelController::class, 'index'])->name('travel');
+            Route::get('/create', [TravelController::class,'create'])->name('travel-create');
+            Route::post('/store', [TravelController::class,'store'])->name('travel-store');
+            Route::get('/{id}', [TravelController::class,'show'])->name('travel-show');
+            Route::delete('/{id}', [TravelController::class,'destroy'])->name('travel-destroy');
+            Route::put('/{id}', [TravelController::class,'update'])->name('travel-update');
+            Route::get('/travel/{id}/edit', [TravelController::class,'edit'])->name('travel-edit');
+            // Route::post('/travel-export', [App\Http\Controllers\salesController::class, 'export'])->name('travel-export');
+            // Route::get('/travel', [App\Http\Controllers\salesController::class, 'ajax'])->name('ajax-produk');
+            // Route::post('/travel-import', [salesController::class, 'import'])->name('produk-import');
+            // Route::get('/travel/download-template', [SalesController::class, 'DownloadTemplate'])->name('produk-download-template');
+            // =====End Data Travel
     });
 
 // });
